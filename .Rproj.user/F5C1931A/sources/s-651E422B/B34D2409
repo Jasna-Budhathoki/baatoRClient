@@ -3,22 +3,22 @@
     "path": "~/Desktop/baato-rclient/DESCRIPTION",
     "project_path": "DESCRIPTION",
     "type": "text",
-    "hash": "737635546",
+    "hash": "2119485429",
     "contents": "",
     "dirty": false,
     "created": 1661320668071.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
-        "cursorPosition": "7,18",
+        "cursorPosition": "0,21",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1661328303,
+    "lastKnownWriteTime": 1661328636,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1661328303278,
+    "last_content_update": 1661328636703,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -1,4 +1,4 @@
-Package: baato_r_client
+Package: baatorclient
 Type: Package
 Title: Baato API Access 
 Version: 0.0.1.0
