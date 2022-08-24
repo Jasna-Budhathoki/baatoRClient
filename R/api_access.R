@@ -5,13 +5,19 @@ library(httr)
 baato_API <- R6Class(classname = "baato_API", #name of the class
                      public = list(
                        key = NULL,
+#'
+#' @param key 
                        initialize = function(key = NA){
                          self$key = key
                        },
+#'
+#' @param key 
                        set_key = function(key){
                          self$key <- key 
                          cat("The key is ", self$key)
                        },
+#'
+#' @param key 
                        display_key = function(){
                          cat(paste0("the key is", self$key, ".\n"))
                        },
@@ -22,7 +28,6 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
 #' @param req 
 #'
 #' @return error message 
-#' @export
                        validate_resp = function(req){
                          if (http_type(req) != "application/json") {
                            stop("API did not return json", call. = FALSE)
@@ -53,7 +58,7 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
 #' @param req 
 #'
 #' @return the API response in JSON format 
-#' @export
+#'  
                        display_resp = function(req){
                          content <- httr::content(req, as = "text")
                          api_char <- base::rawToChar(req$content)
@@ -70,7 +75,7 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
 #' @return the API response in JSON format 
 #'
 #' @examples baato$rev_api_call(lat = 27.70446921370009, lon = 85.32051086425783)
-#' @export
+#'  
                        rev_api_call = function(lat,lon){
                          reverse_url = "https://api.baato.io/api/v1/reverse"
                          req <- httr::GET(reverse_url, query = list(
@@ -89,10 +94,10 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
 #' @param limit 
 #'
 #' @return the API response in JSON format 
-#' @export
+#'  
 #'
 #' @examples baato$search_api_call(q="shemrock nepalgunj",limit=4)
-#' @export
+#'  
                        search_api_call = function(q,limit) {
                          search_url <- "https://api.baato.io/api/v1/search"
                          req <- httr::GET(search_url, query = list(
@@ -113,7 +118,7 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
 #' @return the API response in JSON format 
 #'
 #' @examples baato$places_api_call(placeId = 102235)
-#' @export
+#'  
                        places_api_call = function(placeId){
                          place_url <- "https://api.baato.io/api/v1/places"
                          req <- httr::GET(place_url, query = list(
@@ -136,7 +141,7 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
 #' @examples baato$nearby_api_call(type="school",lat=27.71765,lon=85.32691,limit=20)
 #'
 #' @return the API response in JSON format 
-#' @export
+#'  
 #' 
                        nearby_api_call = function(type,lat,lon,limit){
                          nearby_url <- "https://api.baato.io/api/v1/search/nearby"
@@ -161,7 +166,7 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
 #'
 #' @examples
 #' baato$styles_api_call(style_name="monochrome")
-#' @export
+#'  
                        styles_api_call = function(style_name){
                          styles_url <- "https://api.baato.io/api/v1/styles"
                          req <- httr::GET(styles_url, query = list(
@@ -182,7 +187,7 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
 #' @return the API response in JSON format 
 #'
 #' @examples baato$baato_directions_api(points = point, mode="car")
-#' @export
+#'  
                        baato_directions_api = function(points,mode) {
                          directions_url <- "https://api.baato.io/api/v1/directions"
                          p1 = points[1]
