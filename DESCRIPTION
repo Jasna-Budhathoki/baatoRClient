@@ -1,6 +1,6 @@
-Package: baatorclient
+Package: baato-rclient
 Type: Package
-Title: Baato API Access 
+Title: baato-rclient
 Version: 0.0.1.0
 Author: Jasna Budhathoki
 Maintainer: Jasna Budhathoki <jasna.budhathoki@gmail.com>

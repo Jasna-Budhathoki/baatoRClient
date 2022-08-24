@@ -1,6 +1,7 @@
 library(R6)
 library(httr)
 
+
 baato_API <- R6Class(classname = "baato_API", #name of the class
                      public = list(
                        key = NULL,
@@ -46,7 +47,8 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
                        },
                        
                        #display the response 
-#' Title
+
+#' display the response from the API request 
 #'
 #' @param req 
 #'
@@ -60,7 +62,7 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
                          
                        },
                        
-#' Title
+#' Calls the reverse_search api 
 #'
 #' @param lat 
 #' @param lon 
@@ -81,7 +83,7 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
                          self$display_resp(req)
                        },
                        
-#' Title
+#' Calls the search api 
 #'
 #' @param q 
 #' @param limit 
@@ -104,7 +106,7 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
                          
                        },
                        
-#' Title
+#' Calls the places api 
 #'
 #' @param placeId 
 #'
@@ -204,11 +206,11 @@ baato_API <- R6Class(classname = "baato_API", #name of the class
 
 
 baato <- baato_API$new(key = "bpk.05j39KLSi-P80QvtSUdrMYpwuIqsgjTYlMuWtcvZ9UDZ")
-# baato$rev_api_call(lat = 27.70446921370009, lon = 85.32051086425783)
-# point <- c("27.71772,85.32784","27.73449,85.33714")
-# baato$baato_directions_api(points = point, mode="car")
-# baato$nearby_api_call(type="school",lat=27.71765,lon=85.32691,limit=20)
-# baato$places_api_call(placeId = 102235)
-# baato$search_api_call(q="shemrock nepalgunj",limit=4)
-# baato$styles_api_call(style_name="monochrome")
+baato$rev_api_call(lat = 27.70446921370009, lon = 85.32051086425783)
+point <- c("27.71772,85.32784","27.73449,85.33714")
+baato$baato_directions_api(points = point, mode="car")
+baato$nearby_api_call(type="school",lat=27.71765,lon=85.32691,limit=20)
+baato$places_api_call(placeId = 102235)
+baato$search_api_call(q="shemrock nepalgunj",limit=4)
+baato$styles_api_call(style_name="monochrome")
 
