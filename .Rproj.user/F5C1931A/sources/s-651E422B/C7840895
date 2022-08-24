@@ -1,0 +1,24 @@
+{
+    "id": "C7840895",
+    "path": "~/Desktop/baato-rclient/R/api_access.R",
+    "project_path": "R/api_access.R",
+    "type": "r_source",
+    "hash": "2183841326",
+    "contents": "",
+    "dirty": false,
+    "created": 1661320143966.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "186,19",
+        "scrollLine": "193"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1661326861,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1661326861201,
+    "read_only": false,
+    "read_only_alternatives": []
+}

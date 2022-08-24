@@ -1,0 +1,8 @@
+Package: Baato R Client 
+Type: Package
+Title: Baato API Access 
+Version: 0.0.1.0
+Author: Jasna Budhathoki
+Maintainer: jasna.budhathoki@gmail.com
+Description: The R library makes it easy to consume the Baato API into existing python projects.
+RoxygenNote: 7.2.1
