@@ -1,6 +1,6 @@
 Package: baatoRClient
 Type: Package
-Title: baato-rclient
+Title: baatoRClient
 Version: 0.0.1.0
 Author: Jasna Budhathoki
 Maintainer: Jasna Budhathoki <jasna.budhathoki@gmail.com>
