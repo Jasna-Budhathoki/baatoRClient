@@ -1,5 +1,6 @@
 library(R6)
 library(httr)
+library(roxygen2)
 
 
 baato_API <- R6Class(classname = "baato_API", #name of the class

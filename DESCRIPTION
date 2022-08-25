@@ -7,4 +7,4 @@ Maintainer: Jasna Budhathoki <jasna.budhathoki@gmail.com>
 Description: The R library makes it easy to consume the Baato API into existing python projects.
 RoxygenNote: 7.2.1
 License: MIT
-Imports: httr, R6
+Encoding: UTF-8
